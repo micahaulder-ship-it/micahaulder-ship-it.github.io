@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background: #f6e82a;
-  color: #0c0000;
+  color:#6e3316;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -38,24 +38,25 @@ main {
 h2 {
   margin: 0;
   font-size: clamp(4rem, 10vw, 7rem);
-  line-height: 0.09;
+  line-height: 0.9;
   font-weight: 900;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #000;
+  color:#6e3316;
 }
 
 .content > p {
   margin: 0;
-  color: #999;
+  color:#6e3316;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   line-height: 1.4;
 }
 
+
 .content p {
-  color: rgb(226, 243, 50);
+  color:#695320(243, 237, 50);
 }
 
 #interests {
@@ -69,7 +70,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: #6e5726;
+  color:#6e3316;
 }
 
 #interests ul {
@@ -82,7 +83,7 @@ h2 {
 }
 
 #interests li {
-  color: #6e3316;
+  color:#6e3316;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
@@ -101,4 +102,24 @@ h2 {
   color: #fff;
   border-color: #000;
   transform: translateY(-2px);
+}
+.sidebar-img {
+  width: 100%;
+  max-width: 760px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  filter: grayscale(100%);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.sidebar-img:hover {
+
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
