@@ -1,5 +1,5 @@
 $(function () {
-  // initialize canvas and context when able to
+  //initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
@@ -27,17 +27,25 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    toggleGrid();
 
 
     // TODO 2 - Create Platforms
-
-
+createPlatform(500, 0, 20, 290);
+createPlatform(350, 500, 50, 50, "red");
+createPlatform(250, 600, 50, 50, "orange");
+createPlatform(150, 700, 50, 50, "green");
+createPlatform(450, 400, 50, 50, "purple");
+createPlatform(500, 400, 50, 50, "pink");
+createPlatform(550, 400, 50, 50, "blue");
+createPlatform(100, 520, 50, 50, "blue");
 
 
     // TODO 3 - Create Collectables
-
-
+createCollectable("steve", 1350, 50);
+createCollectable("diamond", 150, 170, 0.5, 0.7);
+createCollectable("diamond", 100, 470);
+createCollectable("diamond", 1350, 50);
 
     
     // TODO 4 - Create Cannons
