@@ -70,7 +70,7 @@
 
         // TODO 2 - Variable declarations
     var positionX = 0;
-
+var points = 0
 
 
 
@@ -81,8 +81,9 @@
          * Each time it is called, it should move the Box to a new location.
          * If the box drifts off the screen, turn it around!
          */
-        function update(10) {
-moveBoxTo (positionX) += 10; 
+        function update() {
+        moveBoxTo (positionX);
+        positionX += 10;
 
 
           
@@ -96,8 +97,10 @@ moveBoxTo (positionX) += 10;
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-positionX = 0
-changeBoxText(0)
+        
+          positionX = 0
+        changeBoxText(points)
+        points ++
 
 
 
